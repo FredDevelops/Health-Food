@@ -5,23 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet"
-    href="./fontawesome-free-5.12.0-web/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="app.js"></script>
 </head>
 <body>
+
+<!-- Navagation -->
+<nav>
+  <ul>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/014/603/279/small/cloud-moon-logo-design-crescent-dream-vector.jpg" width="100px" height="100px">
+    <li><a href="#">menu</a></li>
+    <li><a href="#">order</a></li>
+    <li><a href="#">about us</a></li>
+    <li><a href="#">locate</a></li>
+    <li><a href="#">contact</a></li>
+  </ul>
+</nav>
+
+<!--Featuring -->
+<div id="feature">
+  <div class="feat-text">
+    <h1>The Dreamier Revolution</h1>
+    <h3>Meet our new Smoothies</h3>
+    <div class="order-button"><a href="#">Order Now</a></div>
+  </div>
+</div>
+<!-- filter buttons -->
+<div class="btn-container">
+<button  class="filter-btn btn btn-default" id="full-menu" onclick = "fm()";>Full Menu</button>
+<button  class="filter-btn btn btn-default" id="menu">Smoothies</button>
+<button  class="filter-btn btn btn-default" id="menu">Jucie</button>
+<button  class="filter-btn btn btn-default" id="menu">Bowls</button>
+</div>
     <section class="menu">
-        <!-- title -->
-        <div class="title">
-            <h2>Our Menu</h2>
-            <div class="underline"></div>
-        </div>
-        <!-- filter buttons -->
         <!-- menu items -->
         <div class="section-center">
           <!-- single item -->
-          <article class="menu-item">
+          <article class="menu-item" id="Smoothies">
             <img src="https://andianne.com/wp-content/uploads/2021/04/smoothies-44.jpg" class="photo">
           <div class="item-info">
            <header>
@@ -53,7 +79,7 @@
                       <h4>Chocolate Banana Smoothie</h4>
                       <h4 class="price">$8.50</h4>
                      </header>
-                     <p class="item-text">Whenever I’m craving chocolate, this chocolate banana smoothie is my go-to recipe! It’s simple and REALLY delicious. I love to use clean protein powder in smoothies because it’s a great energy source, even if I’m not working out.</p>
+                     <p class="item-text">Whenever I am craving chocolate, this chocolate banana smoothie is my go-to recipe! It’s simple and REALLY delicious. I love to use clean protein powder in smoothies because it’s a great energy source, even if I’m not working out.</p>
                     </div>
                   </article>
                     <!-- end of single item --> 
@@ -95,15 +121,31 @@
                     </div>
                   </article>
                     <!-- end of single item --> 
-
+                    <!-- single item -->
+                    <article class="menu-item">
+                      <img src="https://elavegan.com/wp-content/uploads/2021/05/hand-holding-green-avocado-dressing-next-to-colorful-chickpea-salad-buddha-bowl.jpg" class="photo">
+                    <div class="item-info">
+                     <header>
+                      <h4>Protein Bowl
+                      </h4>
+                      <h4 class="price">$10.99</h4>
+                     </header>
+                     <p class="item-text">Delicious Vegan Buddha Bowl With Chickpeas</p>
+                    </div>
+                  </article>
+                    <!-- end of single item --> 
+                    
         </div>
     </section>
-    <footer>
-      <h4>About</h4>
-      <h4>Nutrition</h4>
-      <h4>Order</h4>
-      <h4>Contact</h4>
+    <!-- footer -->
+    <footer class="footer1">
+      <a href="#"><h4>About</h4></a>
+      <a href="#"><h4>Nutrition</h4></a>
+      <a href="#"><h4>Order</h4></a>
+      <a href="#"><h4>Contact</h4></a>
+      <a href="https://instagram.com/vegandreamsllc?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
     </footer>
+    
     
 </body>
 </html>
